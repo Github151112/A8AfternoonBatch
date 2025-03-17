@@ -33,23 +33,22 @@ public class AutomateFlikart {
 		}
 		if (count == 0)
 			System.out.println("The product is not found");
-		
+
 		String parentId = driver.getWindowHandle();
 		Set<String> allId = driver.getWindowHandles();
-		
-		for(String id:allId)
-		{
-		driver.switchTo().window(id);
-		if(driver.getTitle().equals("REDMI A3X ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com"))
-		{
-			break;
+
+		for (String id : allId) {
+			driver.switchTo().window(id);
+			if (driver.getTitle()
+					.equals("REDMI A3X ( 64 GB Storage, 4 GB RAM ) Online at Best Price On Flipkart.com")) {
+				break;
+			}
 		}
-		}
-	
+
 		driver.findElement(By.xpath("//button[text()='Buy Now']")).click();
-		
+
 		driver.switchTo().window(parentId);
-		
+
 		driver.findElement(By.xpath("//a[@class='CDJO0-']/span")).click();
 	}
 

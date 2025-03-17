@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HandlingDisabledElement {
@@ -22,7 +23,8 @@ public class HandlingDisabledElement {
 		Thread.sleep(2000);
 		
 		JavascriptExecutor j = (JavascriptExecutor) driver;
-		j.executeScript("arguments[0].value='Aman Singh'",driver.findElement(By.name("name")));
+		WebElement userName = driver.findElement(By.name("name"));
+		j.executeScript("arguments[0].value='Aman Singh'",userName);
 		
 		
 	}

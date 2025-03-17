@@ -21,7 +21,9 @@ public class ScrollTillParticularWebelement {
 		
 		// perform explicit typecasting
 		JavascriptExecutor j = (JavascriptExecutor) driver;
-		j.executeScript("arguments[0].scrollIntoView(false)",scrollTill);
+		j.executeScript("arguments[0].scrollIntoView(true)",scrollTill);
+		
+		scrollTill.click();
 	
 		
 

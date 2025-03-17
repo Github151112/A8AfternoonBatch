@@ -19,12 +19,12 @@ public class ScrollUpAndDown {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		for (int i = 0; i < 2; i++) {
 			j.executeScript("window.scrollBy(0,1000)");
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 		}
 
 		for (int i = 0; i < 2; i++) {
 			j.executeScript("window.scrollBy(0,-1000)");
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 		}
 
 	}
