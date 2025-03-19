@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class BaseClass {
 
-	static WebDriver driver;
+	public static WebDriver driver;
 
 	public static void setUp(String browser, int seconds, String url) {
 		if (browser.equalsIgnoreCase("chrome"))
