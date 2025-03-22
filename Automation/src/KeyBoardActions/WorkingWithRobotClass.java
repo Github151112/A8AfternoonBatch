@@ -16,7 +16,7 @@ public class WorkingWithRobotClass extends BaseClass {
 		Robot r = new Robot();
 
 		r.keyPress(KeyEvent.VK_CONTROL);
-		r.keyPress(KeyEvent.VK_SHIFT);
+		r.keyPress(KeyEvent.VK_T);
 		r.keyPress(KeyEvent.VK_I);
 
 		r.keyRelease(KeyEvent.VK_CONTROL);
